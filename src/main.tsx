@@ -80,6 +80,7 @@ const getChefBirthday = async (id: number) : Promise <string | null> => {
     }catch(error){
 
        throw new Error ("Non reisco a recuperare la ricetta con id" + id);
+       
       //il finally in questo caso è superficiale in quanto nella funzione non è presente nessun return.
     }finally{
         console.log("operazione completata")
